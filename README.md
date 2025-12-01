@@ -12,72 +12,40 @@ Python ML-сервис (FastAPI)
 
 Полный frontend (React + Vite + TypeScript)
 
-Как запустить проект у себя 
-1. Требования
+Установить Python 3.10+
 
-Python 3.10
+https://www.python.org/downloads/
 
-Node.js v18+
+2 Установить Node.js v18
 
-pnpm (или npm/yarn, но проект использует pnpm)
+https://nodejs.org/en/download/prebuilt-installer
 
-Windows/macOS/Linux
+3 Backend (Python ML)
 
-2. Установка Python-части (ML сервис)
+Выполнить:
 
-Перейдите в папку:
-
-cd crop_forecast_app/ml_service
-
-
-Создайте виртуальное окружение:
-
+cd ml_service
 python -m venv .venv
-
-
-Активируйте:
-
-Windows
-.\.venv\Scripts\activate
-
-macOS/Linux
-source .venv/bin/activate
-
-
-Установите зависимости:
-
+.venv\Scripts\activate
 pip install -r requirements.txt
+uvicorn api:app --reload --port 8000
 
 
+Backend работает:
+ http://127.0.0.1:8000/predict
 
-4. Запуск ML API сервера
-uvicorn ml_service.api:app --reload --port 8000
+4️ Server (Node.js)
 
+Открыть второй терминал:
 
-После запуска API доступно по адресу:
-
-http://127.0.0.1:8000/predict
-
-5. Запуск фронтенда
-
-Перейдите в корень проекта:
-
-cd crop_forecast_app
-
-
-Установите зависимости:
-
+cd server
+npm install -g pnpm
 pnpm install
-
-
-Запустите локальный сервер:
-
 pnpm dev
 
 
-Frontend будет доступен по адресу:
-
-http://localhost:3000
+Сайт работает:
+ http://localhost:3000
 
 Как система работает
 
