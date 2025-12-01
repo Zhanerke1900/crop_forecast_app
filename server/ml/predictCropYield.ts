@@ -1,9 +1,7 @@
-// client/src/lib/predictCropYield.ts
-
 export async function predictCropYield(input: any) {
-  const API_URL = "/api/predict";   // ← правильный путь через backend
+  const API_URL = import.meta.env.VITE_API_URL || "/api";
 
-  const res = await fetch(API_URL, {
+  const res = await fetch(`${API_URL}/predict`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -13,9 +11,7 @@ export async function predictCropYield(input: any) {
     }),
   });
 
-  if (!res.ok) {
-    throw new Error("Backend error");
-  }
+  if (!res.ok) throw new Error("Backend error");
 
   return res.json();
 }
