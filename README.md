@@ -1,4 +1,150 @@
-Crop Yield Forecasting System
+Crop Yield Forecasting System \\English version
+Machine Learning + Full Web Application
+
+A complete end-to-end system for predicting agricultural crop yields based on climatic inputs.
+The solution includes:
+
+Python ML Service (FastAPI)
+
+Trained RandomForest Model (multi_crop_model.pkl)
+
+Automatic Excel Value Lookup for Exact Historical Matches
+
+Fully Functional Frontend (React + Vite + TypeScript)
+
+This project is designed as a production-ready, modular architecture suitable for research, deployment, and portfolio demonstration.
+
+🔧 Tech Stack
+Backend — Python (FastAPI)
+
+FastAPI REST API
+
+RandomForest Regressor (multi-output)
+
+Exact-yield lookup table from Excel
+
+Numpy, Pandas, Scikit-Learn
+
+Frontend — React + Vite + TypeScript
+
+Modern component-based UI
+
+Chart.js visualization
+
+API integration with Python service
+
+🛠 Installation Guide
+1. Install Python 3.10+
+
+Download from:
+https://www.python.org/downloads/
+
+2. Install Node.js v18
+
+Download from:
+https://nodejs.org/en/download/prebuilt-installer
+
+3. Start the ML Backend (Python)
+
+Open terminal #1:
+
+cd ml_service
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+
+uvicorn api:app --reload --port 8000
+
+
+Backend will be available at:
+
+http://127.0.0.1:8000/predict
+
+4️. Start the Web Server (Node.js)
+
+Open terminal #2:
+
+cd server
+npm install -g pnpm
+pnpm install
+pnpm dev
+
+
+Frontend will run at:
+
+http://localhost:3000
+
+⚙️ How the System Works
+User Inputs
+
+Temperature
+
+Humidity
+
+Precipitation
+
+ML Backend Logic
+
+Checks for exact matches of climate values in the Excel lookup table
+
+If found → returns the original historical yields
+
+If not found → the RandomForest multi-output model predicts yields for all crops
+
+Returned Data Includes
+
+Predicted yield for each crop
+
+Average yield
+
+R² score (accuracy)
+
+RMSE (error metric)
+
+Frontend
+
+Sends parameters to backend
+
+Displays yield results
+
+Renders comparison chart
+
+Project Structure
+crop_forecast_app/
+│
+├── ml_service/
+│   ├── api.py                  # FastAPI backend
+│   ├── model.py                # Training script
+│   ├── multi_crop_model.pkl    # Trained RandomForest model
+│   ├── requirements.txt        # Python dependencies
+│   └── Crop_Yield_NK 1.xlsx    # Historical dataset
+│
+├── server/
+│   ├── src/
+│   │   ├── pages/
+│   │   ├── components/
+│   │   └── ...
+│   ├── package.json
+│   └── tsconfig.json
+│
+└── README.md
+
+ Key Features
+
+Multi-crop yield prediction
+
+Climate-based lookup + ML fallback
+
+Zero rounding or transformation of original Excel data
+
+Clean, modern React frontend
+
+FastAPI backend with real-time response 
+
+
+
+
+CROP YIELD FORECASTING SYSTEM \\Russion version
 
 Machine Learning + Web Application
 
