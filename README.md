@@ -83,6 +83,7 @@ http://127.0.0.1:8000/predict
 (not the webpage!)
 
 <img src="screenshots/backend.png" width="700">
+<img src="screenshots/backend2.png" width="700">
 
 4️. Start the Web Server (Node.js)
 
