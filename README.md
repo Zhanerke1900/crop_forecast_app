@@ -145,7 +145,7 @@ crop_forecast_app/
 │   └── tsconfig.json
 │
 └── README.md
-<img src="screenshots/structure.png" width="700">
+<img src="screenshots/structure.png" width="300">
  Key Features
 
 Multi-crop yield prediction
