@@ -15,18 +15,23 @@ Fully Functional Frontend (React + Vite + TypeScript)
 This project is designed as a production-ready, modular architecture suitable for research, deployment, and portfolio demonstration.
 
 Homepage
+
 <img src="screenshots/homepage.png" width="700">
 
 Data entering
+
 <img src="screenshots/dataEntering.png" width="700">
 
 Results
+
 <img src="screenshots/results.png" width="700">
 
 Chart result
+
 <img src="screenshots/chartresult.png" width="700">
 
 Since RandomForest is not able to give the exact output as in the Excel, I added Automatic Excel Value Lookup for Exact Historical Matches
+
 <img src="screenshots/exactExcelDataEntering.png" width="700">
 <img src="screenshots/exactExcelResult.png" width="700">
 
@@ -76,7 +81,9 @@ Backend will be available at:
 
 http://127.0.0.1:8000/predict
 (not the webpage!)
+
 <img src="screenshots/backend.png" width="700">
+
 4️. Start the Web Server (Node.js)
 
 Open terminal #2(do not close the first terminal):
@@ -90,7 +97,9 @@ pnpm dev
 Frontend will run at:
 
 http://localhost:3000
+
 <img src="screenshots/frontend.png" width="700">
+
 ⚙️ How the System Works
 User Inputs
 
@@ -145,7 +154,13 @@ crop_forecast_app/
 │   └── tsconfig.json
 │
 └── README.md
+
+
+
 <img src="screenshots/structure.png" width="300">
+
+
+
  Key Features
 
 Multi-crop yield prediction
