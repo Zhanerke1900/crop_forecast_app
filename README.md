@@ -1,5 +1,22 @@
-Crop Yield Forecasting System \\English version
-Machine Learning + Full Web Application
+Crop Yield Forecasting System — End-to-End Machine Learning Application \\English version
+
+Machine Learning + Full Web Application 
+
+This project presents a complete machine learning and web-based system for predicting agricultural crop yields using climatic and seasonal parameters. The model is trained on a unique, manually collected dataset provided by field practitioners, offering realistic, domain-specific data unavailable through public platforms such as eGov. Working with authentic field observations enabled handling noise, missing values, and irregular patterns typical of real-world agricultural environments
+This project was carried out as part of my academic research, with light methodological guidance from Aigul Mimenbayeva, MSc, School of Artificial Intelligence and Data Science.All implementation, system design, and model development were conducted by me, while the supervisor ensured scientific correctness and supported the work from a research-oriented perspective.  
+The system includes the full development pipeline:
+
+data preprocessing and feature engineering
+
+training and evaluation of a Random Forest regression model
+
+model serialization and API deployment with FastAPI
+
+a fully functional React-based frontend for user interaction
+
+A hybrid inference mechanism is implemented:
+when exact historical observations exist, the system returns the actual recorded yield; otherwise, a machine learning prediction is generated. This design increases transparency, robustness, and practical applicability for agricultural decision-making.
+Overall, the project demonstrates my ability to develop a full-stack analytical system, work with authentic field data, and apply machine learning techniques to a meaningful real-world problem within the domain of precision agriculture.
 
 A complete end-to-end system for predicting agricultural crop yields based on climatic inputs.
 The solution includes:
@@ -12,7 +29,6 @@ Automatic Excel Value Lookup for Exact Historical Matches
 
 Fully Functional Frontend (React + Vite + TypeScript)
 
-This project is designed as a production-ready, modular architecture suitable for research, deployment, and portfolio demonstration.
 
 Homepage
 
