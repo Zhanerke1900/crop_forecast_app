@@ -48,23 +48,23 @@ https://nodejs.org/en/download/prebuilt-installer
 
 Open terminal #1:
 
-cd ml_service
+
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 
-uvicorn api:app --reload --port 8000
+uvicorn ml_service.api:app --reload --port 8000
 
 
 Backend will be available at:
 
 http://127.0.0.1:8000/predict
-
+(not the webpage!)
 4️. Start the Web Server (Node.js)
 
-Open terminal #2:
+Open terminal #2(do not close the first terminal):
 
-cd server
+
 npm install -g pnpm
 pnpm install
 pnpm dev
@@ -174,17 +174,18 @@ https://nodejs.org/en/download/prebuilt-installer
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
-uvicorn api:app --reload --port 8000
+uvicorn ml_service.api:app --reload --port 8000
+
 
 
 Backend работает:
  http://127.0.0.1:8000/predict
-
+(не веб-страница!)
 4️ Server (Node.js)
 
-Открыть второй терминал:
+Открыть второй терминал, не закрывая первый:
 
-cd server
+
 npm install -g pnpm
 pnpm install
 pnpm dev
