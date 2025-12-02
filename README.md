@@ -170,7 +170,7 @@ https://nodejs.org/en/download/prebuilt-installer
 
 Выполнить:
 
-cd ml_service
+
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
