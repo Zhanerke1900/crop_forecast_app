@@ -21,7 +21,7 @@ Data entering
 <img src="screenshots/dataEntering.png" width="700">
 
 Results
-<img src="screenshots/Results.png" width="700">
+<img src="screenshots/results.png" width="700">
 
 Chart result
 <img src="screenshots/chartresult.png" width="700">
